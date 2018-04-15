@@ -1,6 +1,4 @@
 // z80_top.v
-// inputs: ???
-// outputs: ???
 //
 
 // Pinouts from Pin description,
@@ -30,5 +28,15 @@ module z80_top (
     // input vdd,
     // input vss
 );
+
+assign M1_n = 0;
+assign MREQ_n = 0;
+assign IORQ_n = 0;
+assign RD_n = 0;
+assign WR_n = 0;
+assign RFSH_n = 0;
+assign HALT_n = 0;
+assign BUSACK = 0;
+assign A = 16'hDEAD;
 
 endmodule
